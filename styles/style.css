@@ -43,6 +43,28 @@ color: var(--text-color);
   align-items: center;
 }
 
+.content__text-block_type_first-lettered>.content__paragraph:first-of-type::first-letter {
+  display: inline-block;
+  margin: 0 1px 0 0;
+  padding: 0 4px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: normal;
+  background-color: var(--accent-color);
+}
+
+.theme_dark .content__text-block_type_first-lettered>.content__paragraph:first-of-type::first-letter {
+  border: 1px solid currentColor;
+}
+
+.content__text-block>.content__paragraph:not(:last-of-type) {
+  margin: 0 0 1.5em;
+}
+
+.content__card-image {
+  inline-size: 100%;
+}
+
 .header__title {
   font-family: var(--main-font);
   font-size: 120px;
@@ -56,33 +78,9 @@ color: var(--text-color);
   padding-top: 145px;
 }
 
-.scnd_pdng {
-  padding-top: 202px;
-}
-
-.accent__letter {
-  font-size: 30px;
-  font-weight: bold;
-  background-color: orange;
-}
-
-.content-section {
-  padding-top: 5vi;
-}
-
 .header__text {
  padding-left: 120px;
  padding-right: 6px;
  font-family: var(--accent-font);
  font-size: 18px;
-}
-
-.content__text-block_type_first-lettered::after {
-  content: "T";
-  font-size: 30px;
-  font-weight: bold;
-  background-color: orange;
-  background-size: 200px;
-  width: 30px;
-  height: 30px;
 }
